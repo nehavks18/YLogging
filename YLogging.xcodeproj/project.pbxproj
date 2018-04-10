@@ -10,6 +10,7 @@
 		91F774A0207C63AC00963224 /* YLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F77496207C63AB00963224 /* YLogging.framework */; };
 		91F774A5207C63AC00963224 /* YLoggingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F774A4207C63AC00963224 /* YLoggingTests.swift */; };
 		91F774A7207C63AC00963224 /* YLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 91F77499207C63AB00963224 /* YLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91F774B1207C641700963224 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F774B0207C641700963224 /* Logging.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		91F7749F207C63AC00963224 /* YLoggingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLoggingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F774A4207C63AC00963224 /* YLoggingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLoggingTests.swift; sourceTree = "<group>"; };
 		91F774A6207C63AC00963224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91F774B0207C641700963224 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				91F77499207C63AB00963224 /* YLogging.h */,
 				91F7749A207C63AB00963224 /* Info.plist */,
+				91F774B0207C641700963224 /* Logging.swift */,
 			);
 			path = YLogging;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					91F77495207C63AB00963224 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					91F7749E207C63AC00963224 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F774B1207C641700963224 /* Logging.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		91F774AB207C63AC00963224 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,6 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = headerlabs.com.YLogging;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,6 +361,7 @@
 		91F774AC207C63AC00963224 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,6 +382,7 @@
 		91F774AE207C63AC00963224 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = YLoggingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -387,6 +396,7 @@
 		91F774AF207C63AC00963224 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = YLoggingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
